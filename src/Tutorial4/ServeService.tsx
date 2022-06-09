@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ROSContext } from '../Tutorial1/RosContext'
 import ROSLIB from 'roslib'
-import { stringify } from 'querystring'
 
 
 const ServeService: React.FC = () => {
@@ -26,7 +25,7 @@ const ServeService: React.FC = () => {
 
     return (
       <div>
-        {(answer) ? <p> {serveService?.name} is called. The answer is {answer}.</p> : <p>Not called.</p>}
+        {(answer) ? <p> {serveService?.name} is called. The answer is {answer}.</p> : <p>Not called. Plearse call the "/add_two_ints" service.</p>}
       </div>
     )
 }
